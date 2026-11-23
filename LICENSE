@@ -1,0 +1,36 @@
+# Project Foundation Licensing
+
+Copyright (c) 2026 Michael A. Warren.
+
+Project Foundation uses separate licenses for software and written material so each can be reused under terms appropriate to its purpose.
+
+## Software and executable resources — MIT License
+
+Unless a file states otherwise, the following are licensed under the MIT License:
+
+- Source code and scripts
+- GitHub Actions workflows and other automation
+- Repository and technology templates
+- Executable code samples
+- Configuration examples intended to be copied or executed
+
+See [LICENSE-MIT](LICENSE-MIT).
+
+## Documentation and written material — Creative Commons Attribution 4.0 International
+
+Unless a file states otherwise, the following are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license:
+
+- Documentation and guides
+- Development standards and policies
+- Written examples and explanatory material
+- Diagrams and other original educational content
+
+See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0) and the [official license](https://creativecommons.org/licenses/by/4.0/).
+
+## Third-party material
+
+Third-party components, names, trademarks, code, images, and other materials remain subject to their own licenses and terms. Their inclusion does not imply that they are relicensed under the terms above. Preserve applicable third-party notices.
+
+If a file contains a different or additional license notice, follow that file's notice for the material it identifies.
+
+This file is a summary to help readers identify the applicable license. The referenced license terms govern.
