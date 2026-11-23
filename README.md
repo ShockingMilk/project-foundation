@@ -6,11 +6,9 @@
 
 ## Overview
 
-Project Foundation is a shared collection of development standards, repository templates, reusable automation, and practical guidance for building and maintaining software projects.
+Project Foundation provides shared development standards, resources, templates, and automation. It is intended to help projects establish consistent engineering practices without requiring them to share an identical architecture or repository structure.
 
-It provides a common foundation for projects developed under the ShockingMilk identity while allowing each project to retain its own architecture, requirements, and personality.
-
-The goal is not to make every project identical. It is to make projects easier to understand, maintain, test, secure, and hand off to others.
+Each project remains responsible for adopting and adapting these resources to meet its own technical and operational requirements.
 
 ## Purpose
 
@@ -36,6 +34,14 @@ Project Foundation exists to:
 | `examples/` | Demonstrations and reference implementations |
 
 The repository will evolve as standards and reusable resources are established through actual project development.
+
+### Workflows
+
+The root-level `workflows/` directory contains workflow examples, reference material, and supporting documentation.
+
+Reusable GitHub Actions workflows intended for direct use by other repositories are maintained under `.github/workflows/`.
+
+Consuming repositories retain their own workflow configuration, triggers, permissions, secrets, and project-specific execution requirements.
 
 ## Guiding Principles
 
@@ -84,6 +90,17 @@ Project Foundation supports multiple independent projects, including:
 - Cluster
 
 These projects are independent. Project Foundation provides shared guidance and resources rather than becoming a dependency that every project must have available at runtime.
+
+## Licensing
+
+Project Foundation uses a dual-license approach to make its resources reusable while respecting the different purposes of software and documentation.
+
+- **Software and executable resources:** MIT License
+- **Documentation, written standards, and educational material:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+See the [LICENSE](LICENSE) file for an explanation of which license applies to each type of material.
+
+Third-party material may be subject to separate licensing terms. Always review applicable notices before reusing third-party resources.
 
 ## Contributing
 

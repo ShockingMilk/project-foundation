@@ -11,8 +11,8 @@ You are free to share and adapt the licensed material, including for commercial 
 When redistributing or adapting this material, provide appropriate credit. A suggested attribution is:
 
 > Project Foundation — by Michael A. Warren  
-> Source: https://github.com/ShockingMilk/project-foundation  
-> Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+> Source: <https://github.com/ShockingMilk/project-foundation>  
+> Licensed under CC BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
 
 Indicate whether changes were made. Attribution must not imply endorsement by the original creator.
 
@@ -20,7 +20,7 @@ Indicate whether changes were made. Attribution must not imply endorsement by th
 
 The official license and complete legal code are available at:
 
-https://creativecommons.org/licenses/by/4.0/legalcode
+<https://creativecommons.org/licenses/by/4.0/legalcode>
 
 This notice is a summary and attribution guide, not a replacement for the official license. The official CC BY 4.0 legal code governs.
 

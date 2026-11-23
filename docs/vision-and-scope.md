@@ -101,6 +101,25 @@ Examples include:
 
 These standards should extend the shared foundation rather than conflict with it unnecessarily.
 
+### 4.6 Project Independence and Adaptability
+
+Project Foundation provides common engineering principles and reusable resources. It does not require every consuming project to use the same architecture, technology stack, directory structure, or deployment model.
+
+Each project must retain ownership of its:
+
+- Architecture and repository organization.
+- Technology stack and dependencies.
+- Configuration and environment-specific settings.
+- Testing strategy and quality requirements.
+- CI/CD triggers, permissions, and deployment processes.
+- Operational procedures and maintenance responsibilities.
+
+Shared resources should be adopted where they provide practical value. Projects may adapt recommended practices or establish justified alternatives when their technical or operational requirements differ.
+
+Required standards establish the minimum expectations for consistency, security, and maintainability. Recommended standards provide guidance without unnecessarily restricting project design.
+
+The objective is consistent engineering quality, not identical project structures.
+
 ## 5. Out of Scope
 
 Project Foundation is not intended to:
@@ -119,7 +138,7 @@ Individual projects remain responsible for their own functionality, deployment, 
 
 Project Foundation distinguishes between two classifications.
 
-### Required Standards
+### 6.1 Required Standards
 
 Practices expected across projects unless an exception is justified and documented.
 
@@ -131,7 +150,7 @@ Examples may include:
 - Providing appropriate testing for supported functionality.
 - Keeping project configuration separate from implementation where practical.
 
-### Recommended Standards
+### 6.2 Recommended Standards
 
 Preferred practices that may be adapted based on project needs.
 
@@ -144,6 +163,18 @@ Examples may include:
 - Technology-specific architectural patterns.
 
 The distinction allows shared expectations without imposing inappropriate technical requirements.
+
+### 6.3 Privacy and Information Protection
+
+Project Foundation follows a strict privacy-first approach to public development.
+
+Private or sensitive information must never be intentionally published in repository history, including information that is subsequently removed from the latest version of a file.
+
+Projects should be designed to support local configuration, environment-specific settings, and safe example values without requiring developers to expose private infrastructure details or personal information.
+
+This principle applies to source code, documentation, configuration examples, logs, screenshots, test data, automation, and all other published project resources.
+
+Privacy protection is a foundational requirement, not an optional enhancement.
 
 ## 7. Independence and Reusability
 

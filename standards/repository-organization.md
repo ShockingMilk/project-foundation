@@ -12,6 +12,16 @@ It defines shared organizational principles and reference layouts. It does not r
 
 A Python application, PowerShell toolkit, Django website, Raspberry Pi application, and infrastructure repository have different needs. Their structures should reflect those needs while preserving common expectations.
 
+### 1.1 Applying This Standard to Project Foundation
+
+Project Foundation is a shared resource repository rather than a conventional application repository.
+
+Its own directory structure is intentionally focused on standards, documentation, templates, examples, and reusable resources.
+
+It does not need to implement every directory shown in the illustrative structure.
+
+This standard is intended to guide consuming projects in selecting an appropriate structure for their own needs. Project Foundation should demonstrate the principles of clarity, separation of responsibilities, and maintainability without requiring itself or other projects to follow an identical layout.
+
 ## 2. Core Requirements
 
 Repositories MUST:
@@ -35,9 +45,24 @@ Repositories SHOULD:
 - Keep architecture and setup documentation close to the code it describes.
 - Use a lock file or another reproducible dependency mechanism when supported by the ecosystem.
 
-## 3. Reference Repository Layout
+## 3. Illustrative Repository Structure
 
-The following is a starting model, not a mandatory directory tree:
+The following structure provides a recommended starting point for projects that benefit from a conventional, organized repository layout.
+
+It is an example, not a mandatory directory structure.
+
+Projects should adopt only the directories and organizational layers that serve an actual purpose. Additional directories should be introduced as project responsibilities and requirements develop.
+
+A repository should remain as simple as practical while maintaining clear separation of responsibilities.
+
+The structure may be adapted based on:
+
+- Project size and complexity.
+- Programming languages and technology stack.
+- Application architecture.
+- Deployment and operational requirements.
+- Hardware or platform dependencies.
+- Testing and documentation needs.
 
     project/
     ├── .github/
@@ -59,23 +84,27 @@ The following is a starting model, not a mandatory directory tree:
     ├── LICENSE
     └── README.md
 
-Use only the directories a project needs. Do not create empty folders simply to match this illustration.
+### 3.1 Directory Selection and Adaptation
 
-### Directory responsibilities
+Directories should represent meaningful responsibilities within a project.
 
-| Location | Responsibility |
+The following are examples of common directories, but none should be created automatically simply because they appear in a reference structure.
+
+| Directory | Introduce when... |
 | --- | --- |
-| `.github/` | GitHub-specific configuration, issue/PR templates, and Actions workflows |
-| `config/` | Safe defaults, configuration examples, and schemas; local secrets do not belong here |
-| `docs/` | User, developer, architecture, deployment, and operational documentation |
-| `scripts/` | Developer, build, maintenance, and administrative scripts |
-| `src/` | Application or library implementation |
-| `tests/` | Automated tests, organized by component or language |
-| `examples/` | Safe, self-contained demonstrations and sample input |
-| `assets/` | Static resources required by the project |
-| `dist/`, `build/`, `coverage/` | Generated output; normally ignored by Git |
+| `src/` | Source code benefits from being separated from supporting files. |
+| `tests/` | Automated tests need a dedicated location. |
+| `config/` | The project has configuration files, schemas, or safe examples that benefit from central organization. |
+| `examples/` | Reusable or illustrative examples need to be maintained. |
+| `assets/` | The project contains images, media, or other supporting resources. |
+| `scripts/` | Supporting scripts need to be separated from application code. |
+| `docs/` | Project documentation requires a dedicated location. |
 
-A project may use a language ecosystem's conventional layout instead of `src/`. For example, a Python package may use a package directory at the root, and a PowerShell module may use a module-name directory containing its manifest and module files.
+Some projects may combine responsibilities or use different conventions based on their frameworks and ecosystems.
+
+Avoid empty directories, unnecessary nesting, and duplicate organizational layers.
+
+The goal is to make the repository easier to understand, maintain, and contribute to—not to maximize the number of directories.
 
 ## 4. Organizing Multi-Language Projects
 
@@ -99,7 +128,7 @@ A mixed Python and PowerShell project might use:
 
 This is illustrative. A project may choose another structure when it better fits its packaging, import, module, or deployment conventions.
 
-### One-Click IT Toolkit as a reference
+### 4.1 One-Click IT Toolkit as a reference
 
 The One-Click IT Toolkit is an important reference because it combines Python and PowerShell, targets Windows, Linux, and macOS, and is designed for offline or air-gapped use.
 
